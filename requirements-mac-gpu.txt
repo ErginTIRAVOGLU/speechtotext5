@@ -1,0 +1,14 @@
+# macOS (Apple Silicon) GPU setup
+#
+# This uses OpenAI Whisper on Apple's MPS (Metal) via PyTorch.
+# Ensure ffmpeg is installed: `brew install ffmpeg`
+#
+# Notes:
+# - You may want Python 3.12 if wheels are missing for your Python version.
+# - If you only want CPU, you can keep using requirements.txt
+# brew install ffmpeg
+
+numpy
+faster-whisper
+openai-whisper
+torch
