@@ -1,0 +1,1 @@
+speechtotext.exe --device cpu --compute-type int8 --model large-v3 --use-ffmpeg --language tr 8.m4a

@@ -1,0 +1,5 @@
+# Use Python 3.12.x (recommended) or 3.11.x on Windows.
+# Python 3.13/3.14 often lack wheels for transitive deps (e.g., PyAV), causing source builds to fail.
+
+faster-whisper
+numpy

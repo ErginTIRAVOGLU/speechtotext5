@@ -1,0 +1,8 @@
+indir
+
+cuBLAS.and.cuDNN_CUDA12_win_v2.7z 
+https://github.com/Purfview/whisper-standalone-win/releases/tag/libs
+
+
+ffmpeg-release-essentials.zip
+https://www.gyan.dev/ffmpeg/builds/
