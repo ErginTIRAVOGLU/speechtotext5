@@ -1,0 +1,16 @@
+{
+  "geometry": "980x720+5+44",
+  "python": "/Users/ergin/Github/speechtotext5/.venv/bin/python",
+  "args": {
+    "audio": "/Users/ergin/Downloads/8 Nis anatomi kalp devam.mp3",
+    "backend": "openai-whisper",
+    "beam_size": "5",
+    "compute_type": "int8",
+    "device": "mps",
+    "language": "tr",
+    "model": "large-v3",
+    "nogui": false,
+    "out": "/Users/ergin/Downloads/8test8.txt",
+    "use_ffmpeg": true
+  }
+}
