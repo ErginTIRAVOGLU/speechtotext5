@@ -1,0 +1,2 @@
+# Build-only dependencies (not required at runtime for the packaged EXE)
+pyinstaller

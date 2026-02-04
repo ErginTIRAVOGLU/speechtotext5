@@ -5,7 +5,8 @@ a = Analysis(
     ['speechtotext.py'],
     pathex=[],
     binaries=[],
-    datas=[],
+    # Ship optional ffmpeg path config next to the exe.
+    datas=[('FFMPEG_PATH.txt', '.')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
@@ -16,7 +17,7 @@ a = Analysis(
 )
 pyz = PYZ(a.pure)
 
-exe = EXE(
+exe_gui = EXE(
     pyz,
     a.scripts,
     [],
@@ -33,8 +34,27 @@ exe = EXE(
     codesign_identity=None,
     entitlements_file=None,
 )
+
+exe_cli = EXE(
+    pyz,
+    a.scripts,
+    [],
+    exclude_binaries=True,
+    name='speechtotext-cli',
+    debug=False,
+    bootloader_ignore_signals=False,
+    strip=False,
+    upx=True,
+    console=True,
+    disable_windowed_traceback=False,
+    argv_emulation=False,
+    target_arch=None,
+    codesign_identity=None,
+    entitlements_file=None,
+)
 coll = COLLECT(
-    exe,
+    exe_gui,
+    exe_cli,
     a.binaries,
     a.datas,
     strip=False,

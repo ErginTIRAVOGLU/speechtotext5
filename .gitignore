@@ -4,3 +4,7 @@
 83.mp3.txt
 83_boost.wav
 8.mp3
+
+/dist
+/build
+/.venv

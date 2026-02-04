@@ -1,1 +1,1 @@
-speechtotext.exe --device cuda --model large-v3 --use-ffmpeg --language tr 8.m4a
+speechtotext-cli.exe --nogui --device cuda --model large-v3 --use-ffmpeg --language tr 8.m4a
